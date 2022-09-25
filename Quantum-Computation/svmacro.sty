@@ -1,0 +1,369 @@
+\ProvidesPackage{svmacro}
+% Misc. macros for Truong-Son Van (courtesy by Gautam Iyer).
+% 2019-05-02 00:12
+
+\newif\ifSV@exam
+\@ifclassloaded{exam}{\SV@examtrue}{\SV@examfalse}
+\newif\ifSV@amsbook
+\@ifclassloaded{amsbook}{\SV@amsbooktrue}{\SV@amsbookfalse}
+
+% If's for options
+\newif\ifSV@draft\SV@draftfalse
+\newif\ifSV@twocolumn\SV@twocolumnfalse
+\newif\ifSV@tablet\SV@tabletfalse
+\newif\ifSV@minimal\SV@minimalfalse
+
+\DeclareOption{draft}{\SV@drafttrue}
+\DeclareOption{twocolumn}{\SV@twocolumntrue}
+\DeclareOption{tablet}{\SV@tablettrue}
+\DeclareOption{minimal}{\SV@minimaltrue}
+\ProcessOptions
+
+% Fonts and fixes
+\ifSV@minimal\else
+  \RequirePackage{lmodern}
+  \RequirePackage[T1]{fontenc}
+  \RequirePackage[final]{microtype}
+\fi
+\RequirePackage{xcolor}
+\selectcolormodel{rgb}
+
+% Math
+\RequirePackage[leqno]{amsmath}
+\RequirePackage{amssymb,amsopn,amsthm,bm,mathrsfs}
+\RequirePackage{mathtools}
+\RequirePackage{accents}
+
+% Convenience
+\ifSV@minimal\else
+%  \RequirePackage{cite,indentfirst}
+  \RequirePackage{xspace,centernot,paralist}
+  \RequirePackage{etoolbox}
+\fi
+\RequirePackage{suffix}
+
+\ifSV@draft\setlength{\overfullrule}{1mm}\fi
+\ifSV@twocolumn
+  % 2 Column mode to save trees. Margins chosen so that linewidth here is the
+  % same as amsart, one column with default margins on US letter paper, so
+  % that no overfull hboxes are created / destroyed.
+  \RequirePackage{geometry}
+  \setlength{\columnsep}{34.98999pt} % article, 10pt, letter (lw=345pt)
+  \@ifclassloaded{amsart}{
+    \setlength{\columnsep}{24.98999pt} % amsart,  10pt, letter (lw=360pt)
+  }{}
+  \@ifclassloaded{amsbook}{
+    \setlength{\columnsep}{24.98999pt} % amsbook, 10pt, letter (lw=360pt)
+  }{}
+  \geometry{landscape,includehead,headheight=12pt,headsep=10pt,left=\columnsep,right=\columnsep,top=12.98999pt,bottom=\columnsep}
+  \twocolumn
+
+  \ifSV@amsbook\ifSV@minimal\else
+    % Don't force a new double page for every chapter.
+    \patchcmd{\chapter}{\clearpage}{\newpage}{}{\error}
+
+    % Make vertical space at start of chapter on one column only.
+    \patchcmd{\@makechapterhead}{\global\topskip 7.5pc\relax\begingroup}{\begingroup\topskip 7.5pc\relax}{}{\error}
+
+    % No newpage after title
+    %\patchcmd{\@maketitle}{\newpage}{}{}{}
+  \fi\fi
+\else\ifSV@tablet%ifSV@twocolumn
+  \RequirePackage{geometry}
+  \geometry{paperheight=638pt,paperwidth=400pt,left=20pt,right=20pt,top=10pt,bottom=10pt,includehead,includefoot}
+\else%ifSV@tablet
+  %\usepackage[body={16.65cm,22.65cm}]{geometry}
+  \ifSV@draft
+    % Should be done before loading showkeys
+    \providecommand*{\showkeyslabelformat}[1]{%
+      \fcolorbox{blue!50!black}{cyan!5!white}{%
+	\itshape\fontfamily{\rmdefault}%
+	%\fontsize{4.5pt}{5.4pt}\selectfont%
+	\tiny%
+	#1%
+      }
+    }
+    \RequirePackage[notref,notcite]{showkeys}
+  \fi%ifSV@draft
+\fi\fi%else ifSV@tablet, ifSV@twocolumn
+\ifSV@minimal\else
+  % Make AMS section titles less ugly
+  \@ifclassloaded{amsart}{%
+    \patchcmd{\section}{\scshape\centering}{\bfseries\large}{}{}
+  }
+  {}
+\fi
+
+\RequirePackage{hyperref}% put this last...
+%\usepackage{wrapfig}
+
+\definecolor{link1}{rgb}{0,0,.7}
+\definecolor{link2}{rgb}{0,0.25,0.5}
+\@ifpackagelater{hyperref}{2012/05/28}{
+  % Link colors
+  \hypersetup{final,colorlinks,allcolors=link1,citecolor=link2}
+}{
+  \@ifpackagelater{hyperref}{2009/10/09}{
+    \hypersetup{final,colorlinks,linkcolor=link1,anchorcolor=link1,filecolor=link1,menucolor=link1,runcolor=link1,urlcolor=link1,citecolor=link2,linktocpage=false,breaklinks=true}
+  }{
+    % Really old version of hyperref. No options for maximum compatibility.
+    \hypersetup{final}
+  }
+}
+
+%
+% Styles etc.
+%
+%\renewcommand{\figurename}{\scriptsize Fig.}
+\allowdisplaybreaks
+
+%
+% Theorems, Lemmas etc.
+%
+\newif\ifSV@numwithin
+\SV@numwithinfalse
+\ifcsname c@section\endcsname\SV@numwithintrue\fi
+\ifSV@exam\SV@numwithinfalse\fi
+\ifSV@numwithin\numberwithin{equation}{section}\fi
+
+\ifcsname theorem\endcsname\else
+  % Some document classes define their own theorems.
+  % Only do these if no theorem environment is present.
+  \theoremstyle{plain}
+  \ifSV@numwithin
+    \newtheorem{theorem}{Theorem}[section]
+  \else
+    \newtheorem{theorem}{Theorem}
+  \fi
+  \newtheorem{lemma}[theorem]{Lemma}
+  \newtheorem{proposition}[theorem]{Proposition}
+  \newtheorem{corollary}[theorem]{Corollary}
+  \newtheorem{conjecture}[theorem]{Conjecture}
+  %\@ifclassloaded{exam}{}{\newtheorem{question}[theorem]{Question}}
+
+  \newtheorem*{theorem*}{Theorem}
+  \newtheorem*{lemma*}{Lemma}
+  \newtheorem*{proposition*}{Proposition}
+  \newtheorem*{corollary*}{Corollary}
+
+  \theoremstyle{definition}
+  \newtheorem{definition}[theorem]{Definition}
+
+  \theoremstyle{remark}
+  \newtheorem{remark}[theorem]{Remark}
+  \newtheorem*{remark*}{Remark}
+  \newtheorem{example}[theorem]{Example}
+
+  \ifSV@exam\else\newtheorem{problem}{Problem}[section]\fi
+\fi
+
+% Misc. theorems. (Uses optional argument as name.)
+\newtheoremstyle{misc}
+  {}%      Space above, empty = `usual value'
+  {}%      Space below
+  {\itshape}% Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}% Thm head font
+  {.}%        Punctuation after thm head
+  { }%     Space after thm head: " " = normal interword space; \newline = linebreak
+  {\thmname{#3}\thmnumber{ #2}}% Thm head spec
+\theoremstyle{misc}
+\newtheorem{miscthm}[theorem]{Misc}
+\newtheorem*{miscthm*}{Misc}
+\theoremstyle{plain}%Reset default for new definitions in main file
+
+%
+% References.
+%
+\providecommand{\cites}[1]{\cite{#1}}
+
+
+%
+% Proof steps
+%
+\newcounter{SVCase}\setcounter{SVCase}{0}
+\newenvironment{proofcases}{\setcounter{SVCase}{0}}{}
+\newcommand{\case}[1][\relax]{\smallskip\par\noindent\stepcounter{SVCase}\emph{Case \Roman{SVCase}: \ifx#1\relax\relax\else#1.\fi}}
+
+\newcounter{SVStep}\setcounter{SVStep}{0}
+\newenvironment{proofsteps}{\setcounter{SVStep}{0}}{}
+\newcommand{\step}[1][\relax]{\smallskip\par\noindent\stepcounter{SVStep}\emph{Step \arabic{SVStep}: \ifx#1\relax\relax\else#1.\fi}}
+
+%
+% Symbols and notation
+%
+\newcommand{\lap}{\Delta}
+\newcommand{\laplacian}{\lap}
+\newcommand{\grad}{\nabla}
+\newcommand{\gradperp}{\grad^\perp}
+\newcommand{\dv}{\grad \cdot}
+\newcommand{\curl}{\grad \times}
+\newcommand{\varmin}{\wedge}
+\newcommand{\varmax}{\vee}
+\newcommand{\E}{\bm{E}}
+\renewcommand{\P}{\bm{P}}
+\newcommand{\one}{\bm{1}}
+\newcommand{\interior}[1]{%
+  {\kern0pt#1}^{\mathrm{o}}%
+}
+
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\var}{Var}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\Lip}{Lip}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\dist}{dist}
+
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+%
+% Spaces & sets
+%
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\ubar}[1]{\underaccent{\bar}{#1}}
+\newcommand\pr{\mathbb{P}} 
+\newcommand\eps{\varepsilon}
+\newcommand\cM{\mathcal{M}} \newcommand\cA{\mathcal{A}}
+\newcommand\cC{\mathcal{C}} \newcommand\cV{\mathcal{V}}
+\newcommand\cB{\mathcal{B}} \newcommand\cX{\mathcal{X}} 
+\newcommand\cY{\mathcal{Y}} \newcommand\cD{\mathcal{D}}
+\newcommand\cE{\mathcal{E}} \newcommand\cP{\mathcal{P}}
+%
+% Test if we're in a display or not
+%
+%\newif\ifSV@textstyle
+%\SV@textstyletrue
+%\everydisplay\expandafter{\the\everydisplay\SV@textstylefalse}
+
+%
+% Norms and parenthesis
+%
+% Macros defined with DeclarePairedDelimiter call a \mathclose at the end.
+% This has the unwanted side effect of making sub/superscripts a bit
+% higher/lower than normal. \newdelim and \newdelimX are wrapppers around
+% \DeclarePairedDelimiter that cancels this effect. (This will mess up if you
+% use '(' as the right delimiter however.)
+
+% Work around mathtools bug that should be fixed in later versions.
+% https://tex.stackexchange.com/questions/366665/missing-middle-delimiters-when-redeclarepaireddelimiterinnerwrapper-is-used
+\newif\ifSV@NeedsMathToolsFix
+\@ifpackagelater{mathtools}{2015/11/13}{\SV@NeedsMathToolsFixfalse}{\SV@NeedsMathToolsFixtrue}
+\ifSV@NeedsMathToolsFix
+  \MHInternalSyntaxOn
+  \def\MHempty{}
+  \def\DeclarePairedDelimiterX#1[#2]#3#4#5{%
+    \@ifdefinable{#1}{
+      \MT_paired_delimx_arg_test:n{#2}
+      \MT_delim_default_inner_wrappers:n{#1}
+      \@xp\@xp\@xp
+	\newcommand
+	  \@xp\csname MT_delim_\MH_cs_to_str:N #1 _star:\endcsname
+	  [#2]
+	  {
+	    \begingroup
+	      \def\delimsize{\middle}
+	      %\mathopen{}\mathclose\bgroup\left#3 #5 \aftergroup\egroup\right#4
+	      \@nameuse{MT_delim_\MH_cs_to_str:N #1 _star_wrapper:nnn}
+		{\left#3}{#5}{\right#4}
+	    \endgroup
+	  }
+      \@xp\@xp\@xp
+	\newcommand
+	  \@xp\csname MT_delim_\MH_cs_to_str:N #1 _nostar:\endcsname
+	  [1][\MHempty]
+	{
+	  \begingroup
+	  \def\delimsize{##1}
+	  \@nameuse{MT_delim_\MH_cs_to_str:N #1 _nostar_inner:}
+	}
+      \@xp\@xp\@xp
+	\newcommand
+	  \@xp\csname MT_delim_\MH_cs_to_str:N #1 _nostar_inner:\endcsname
+	  [#2]
+	  {
+	    %\mathopen{%
+	    %  \let\MHempty\@gobble
+	    %  \@xp\@xp\@xp\csname\@xp\MH_cs_to_str:N \delimsize l\endcsname #3}
+	    %#5
+	    %\mathclose{%
+	    %  \let\MHempty\@gobble
+	    %  \@xp\@xp\@xp\csname\@xp\MH_cs_to_str:N \delimsize r\endcsname #4}
+	    \@nameuse{MT_delim_\MH_cs_to_str:N #1 _nostar_wrapper:nnn}
+	    {
+	      \let\MHempty\@gobble
+	      \@xp\@xp\@xp\csname\@xp\MH_cs_to_str:N \delimsize l\endcsname #3
+	      \def\MHempty{}
+	    }
+	    {#5}
+	    {
+	      \let\MHempty\@gobble
+	      \@xp\@xp\@xp\csname\@xp\MH_cs_to_str:N \delimsize r\endcsname #4
+	      \def\MHempty{}
+	    }
+	    \endgroup
+	  }
+      \DeclareRobustCommand{#1}{
+	\@ifstar
+	  {\@nameuse{MT_delim_\MH_cs_to_str:N #1 _star:}}
+	  {\@nameuse{MT_delim_\MH_cs_to_str:N #1 _nostar:}}
+      }
+    }
+  }
+  \MHInternalSyntaxOff
+  \newcommand{\FixDelimSubscripts}[1]{%
+    \reDeclarePairedDelimiterInnerWrapper{#1}{nostar}{##1##2##3}
+  }
+\else
+  \newcommand{\FixDelimSubscripts}[1]{}
+\fi
+
+\newcommand{\newdelim}[3]{%
+  \DeclarePairedDelimiter{#1}{#2}{#3}
+  \FixDelimSubscripts{#1}
+}
+\def\newdelimX#1[#2]#3#4#5{
+  \DeclarePairedDelimiterX#1[#2]{#3}{#4}{#5}
+  \FixDelimSubscripts{#1}
+}
+
+\newdelim{\floor}{\lfloor}{\rfloor}
+\newdelim{\ceil}{\lceil}{\rceil}
+
+\newcommand{\SV@given}[1]{\nonscript\:\mathopen{}#1\vert\nonscript\:\mathopen{}}
+\newcommand{\given}[1][]{\SV@given{#1}}
+\newdelimX\paren[1]{(}{)}{%
+  \renewcommand{\given}{\SV@given{\delimsize}}#1%
+}
+\newdelimX\brak[1]{[}{]}{%
+  \renewcommand{\given}{\SV@given{\delimsize}}#1%
+}
+
+\newcommand{\SV@st}[1]{\nonscript\:#1\vert\nonscript\:\mathopen{}\allowbreak}
+\newcommand{\st}[1][]{\SV@st{#1}}
+\newdelimX\set[1]\{\}{%
+  \renewcommand{\st}{\SV@st{\delimsize}}#1%
+}
+
+\newdelim{\abs}{\lvert}{\rvert}
+\newdelim{\norm}{\lVert}{\rVert}
+%\newdelim{\qv}{[}{]}
+\newdelim{\av}{\langle}{\rangle}
+
+%\newcommand{\ip}[3][]{\av[#1]{#2,#3}}
+%\WithSuffix\newcommand\ip*[2]{\av{#1,#2}}
+%\newcommand{\at}[2][\Bigr]{\ifSV@textstyle|\else#1|_{#2}}
+%\WithSuffix\newcommand\at*[1]{\middle|_{#1}}
+
+\newcommand{\defeq}{\stackrel{\scriptscriptstyle\textup{def}}{=}}
+
+% et al.
+\newcommand{\etal}{et\penalty50\ al.\xspace}

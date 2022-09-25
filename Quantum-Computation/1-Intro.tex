@@ -1,0 +1,66 @@
+\documentclass[12pt]{beamer}
+%% Remove draft for real article, put twocolumn for two columns
+\usetheme{CambridgeUS}
+\usecolortheme{wolverine}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Quantum Computation \\ Introduction }
+\author{Truong-Son Van}
+%\affil[1]{Institute}
+\institute{Fulbright University Vietnam Reading Group}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+    \frametitle{Logistics}
+    Info (dates, speakers, references) is hosted on: \url{https://www.tsvan.xyz/reading.html}
+    
+    Follow John Preskill's notes 
+
+    \url{http://theory.caltech.edu/~preskill/ph219/ph219_2021-22.html}
+
+    Helpful videos:
+    \begin{enumerate}
+        \item Preskill's class: \url{https://www.youtube.com/playlist?list=PL0ojjrEqIyPy-1RRD8cTD_lF1hflo89Iu}
+        \item UC Berkeley Vazirani's class: \url{https://www.youtube.com/playlist?list=PLXEJgM3ycgQW5ysL69uaEdPoof4it6seB}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{ Basics: Complex Vector Space}
+    A \emph{complex vector space} is a non-empty set $\mathbb{V}$, whose elements we call vectors, with three 
+    operations
+    \begin{enumerate}
+        \item Addition $+: \mathbb{V} \times \mathbb{V} \to \mathbb{V}$
+        \item Negation $-: \mathbb{V}\to \mathbb{V}$
+        \item Scalar multiplication: $\cdot : \mathbb{C} \times \mathbb{V} \to \mathbb{V}$
+    \end{enumerate}
+    and a distinguished element called \emph{zero vector $0\in \mathbb{V}$}.
+    The operations above obey usual rules with the scalar multiplication obeys rules for complex numbers.
+
+    \begin{example}
+        $\mathbb{C}^n$, space of complex polynomials $\mathbb{C}[x]$, 
+        space of complex-valued square integrable functions $L^2(\mathbb{R};\mathbb{C})$.
+    \end{example}
+
+    (Un)fortunately, we do have to work with complex numbers...
+\end{frame}
+
+
+
+
+\printbibliography 
+%\bibliography{refs}
+%\bibliographystyle{halpha-abbrv}
+
+
+\end{document}
