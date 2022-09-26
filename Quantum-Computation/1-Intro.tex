@@ -2,9 +2,12 @@
 %% Remove draft for real article, put twocolumn for two columns
 \usetheme{CambridgeUS}
 \usecolortheme{wolverine}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
 \usepackage[style=alphabetic, backend=biber]{biblatex}
 \addbibresource{bibliography.bib}
+\setbeamertemplate{theorems}[numbered] 
+\usepackage{physics}
+\newtheorem{axiom}{Axiom}
 
 %% commentary bubble
 \newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
@@ -14,7 +17,7 @@
 \author{Truong-Son Van}
 %\affil[1]{Institute}
 \institute{Fulbright University Vietnam Reading Group}
-\date{\today}
+\date{September 26, 2022}
 
 \begin{document}
 
@@ -47,6 +50,8 @@
     and a distinguished element called \emph{zero vector $0\in \mathbb{V}$}.
     The operations above obey usual rules with the scalar multiplication obeys rules for complex numbers.
 
+    In QM, vectors will be donoted by $\ket{\varphi}$.
+
     \begin{example}
         $\mathbb{C}^n$, space of complex polynomials $\mathbb{C}[x]$, 
         space of complex-valued square integrable functions $L^2(\mathbb{R};\mathbb{C})$.
@@ -55,6 +60,76 @@
     (Un)fortunately, we do have to work with complex numbers...
 \end{frame}
 
+\begin{frame}
+    \frametitle{ Basics: Inner Product}
+    \begin{definition}
+        Given a vector space $\mathbb{V}$, an \emph{inner product } (dot product or scalar product)
+        is a function
+        \begin{equation*}
+            \langle \cdot, \cdot \rangle : \mathbb{V}\times \mathbb{V} \to \mathbb{C}
+        \end{equation*}
+        that satisfies
+        \begin{enumerate}
+            \item $\langle V, V\rangle \geq 0$ and $\langle V, V \rangle = 0$ iff $V = 0$.
+            \item $\langle V_1 + V_2, V_3 + V_4 \rangle = \langle V_1 , V_3 \rangle +
+                                                \langle V_2 , V_4 \rangle \,.$
+            \item $\langle c V_1, V_2\rangle = c \langle V_1, V_2 \rangle $
+                and
+                $ \langle V_1, c V_2 \rangle = \overline{c} \langle V_1, V_2 \rangle$.
+            \item $\langle V_1, V_2 \rangle = \overline{ \langle V_2, V_1 \rangle  }$.
+        \end{enumerate}
+    \end{definition}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{ Basics: Hilbert Space}
+    \begin{definition}
+        A Hilbert space is a complete vector space with an inner product.
+    \end{definition}
+    \begin{example}
+        \begin{enumerate}
+            \item $\mathbb{C}^n$ wiht the usual inner product
+            \item $L^2(\mathbb{R};\mathbb{C})$ where
+                \begin{equation*}
+                    \langle f, g \rangle = \int \overline{f} g 
+                \end{equation*}
+        \end{enumerate}
+        Fact: finite dimensional Hilbert spaces are isomorphic to $\mathbb{R}^n$.
+        This concept is more useful in infinite dimensional spaces.
+    \end{example}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{ Basics: Hilbert Space}
+    \begin{definition}
+        Given a Hilbert space $\mathcal{H}$,
+        a hermitian operator is a mapping $A:\mathcal{H} \to \mathcal{H}$ such that
+        $A = A^\dag$, where $A^\dag: \mathrm{Dom(A^\dag)}\subset \mathcal{H} \to \mathcal{H}$ is defined by the following relation
+        \begin{equation*}
+            \langle A x , y \rangle = \langle x , A^\dag y \rangle \,.
+        \end{equation*}
+    \end{definition}
+    \begin{itemize}
+        \item For a bounded operator or in finite dimensions, hermitian is the same with self-adjoint.
+    Issues come up when we deal with unbounded operators in  infinite dimensions.
+        \item We mostly deal with finite dimensions, however. So this is not an issue. Just get used
+    to the terminology of physicists.
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Basics: Quantum Mechanics \pause (đểu)}
+We approach this from the axiomatic point of view. 
+
+\begin{axiom}[States]
+    A state is a complete description of a physical system. 
+    In quantum mechanics, a state is a ray in a Hilbert space.
+\end{axiom}
+
+\end{frame}
 
 
 

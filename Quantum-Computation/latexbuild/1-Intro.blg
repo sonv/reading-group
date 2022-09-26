@@ -1,9 +1,9 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'latexbuild/1-Intro.blg'
-[55] biber-darwin:340> INFO - === Sun Sep 25, 2022, 22:04:11
-[67] Biber.pm:418> INFO - Reading 'latexbuild/1-Intro.bcf'
-[133] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
-[146] bbl.pm:654> INFO - Writing 'latexbuild/1-Intro.bbl' with encoding 'UTF-8'
-[146] bbl.pm:757> INFO - Output to latexbuild/1-Intro.bbl
-[146] Biber.pm:130> WARN - The file 'latexbuild/1-Intro.bcf' does not contain any citations!
-[146] Biber.pm:132> INFO - WARNINGS: 1
+[48] biber-darwin:340> INFO - === Mon Sep 26, 2022, 09:06:22
+[58] Biber.pm:418> INFO - Reading 'latexbuild/1-Intro.bcf'
+[123] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
+[134] bbl.pm:654> INFO - Writing 'latexbuild/1-Intro.bbl' with encoding 'UTF-8'
+[134] bbl.pm:757> INFO - Output to latexbuild/1-Intro.bbl
+[134] Biber.pm:130> WARN - The file 'latexbuild/1-Intro.bcf' does not contain any citations!
+[134] Biber.pm:132> INFO - WARNINGS: 1
