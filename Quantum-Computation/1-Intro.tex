@@ -8,6 +8,7 @@
 \setbeamertemplate{theorems}[numbered] 
 \usepackage{physics}
 \newtheorem{axiom}{Axiom}
+\newtheorem*{question}{Question}
 
 %% commentary bubble
 \newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
@@ -50,7 +51,6 @@
     and a distinguished element called \emph{zero vector $0\in \mathbb{V}$}.
     The operations above obey usual rules with the scalar multiplication obeys rules for complex numbers.
 
-    In QM, vectors will be donoted by $\ket{\varphi}$.
 
     \begin{example}
         $\mathbb{C}^n$, space of complex polynomials $\mathbb{C}[x]$, 
@@ -126,12 +126,193 @@ We approach this from the axiomatic point of view.
 
 \begin{axiom}[States]
     A state is a complete description of a physical system. 
-    In quantum mechanics, a state is a ray in a Hilbert space.
+    In quantum mechanics, a state is a {\bf ray} in a Hilbert space.
+\end{axiom}
+
+    
+\end{frame}
+
+\begin{frame}
+\frametitle{Basics: Quantum Mechanics (đểu)}
+\begin{question}
+What is a ray?
+\end{question}
+
+Let $\sim$ be an equivalence relation on $\mathcal{H}$ defined by
+\begin{equation*}
+    x\sim y \iff x = \alpha y\,, \alpha \in \mathbb{C}\,.
+\end{equation*}
+
+In QM, a ray, donoted by $\ket{\varphi}$, is an element in the equivalence class $\mathcal{H}/\sim$.
+
+    When we write $\ket{\varphi}$, we typically think of representation $\varphi$ of this equivalence class.
+\end{frame}
+
+\begin{frame}
+\frametitle{Basics: Quantum Mechanics (đểu)}
+    Notations (abuse): 
+    \begin{gather}
+        \alpha \ket{\varphi} := \ket{\alpha \varphi}\equiv \ket{\varphi} \,, \label{notation1} \\
+    \ket{\varphi} + \ket{\theta} :=  \ket{\varphi + \theta}\,.
+    \end{gather}
+
+
+    Be careful! Despite \eqref{notation1}, 
+    \begin{equation*}
+        \alpha\ket{\varphi} + \ket{\theta} \not= \ket{\varphi + \theta}\,.
+    \end{equation*}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Basics: Quantum Mechanics (đểu)}
+    Given $\varphi \in \mathcal{H}$, we denote $\bra{\varphi}$ to be a linear 
+    functional (dual vector) mapping from $\mathcal{H} \to \mathbb{C}$, such that
+    \begin{equation*}
+    \bra{\varphi} (\theta) = \langle \varphi, \theta \rangle \,.
+    \end{equation*}
+
+    By abuse of notation again, because we think of $\ket{\theta}$
+    to be the representation $\theta$ of the equivalence class,
+    we write
+    \begin{equation*}
+        \braket{ \varphi}{ \theta } := \bra{\varphi}(\theta)=  \langle \varphi, \theta \rangle \,.
+    \end{equation*}
+    
+    This is called Dirac notation.
+
+    \pause
+    Incredibly annoying to mathematicians!
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Basics: Quantum Mechanics (đểu)}
+\begin{axiom}[Observables]
+    An observable is a property of a physical system that in principle can be measured.
+    In QM, an observable is a hermitian operator.
+\end{axiom}
+    Facts:
+    \begin{enumerate}
+        \item Hermitian operators have real eigenvalues
+        \item A ``compact'' hermitian operator $A$ can be decomposed into sums orthogonal projectors to eigenvectors.
+   \begin{equation*}
+       A =  \sum_n a_n E_n
+   \end{equation*}
+   where
+   $a_n$'s are eigenvalues and $E_n$ are the orthogonal projectors to eigenvectors.
+    \end{enumerate}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Basics: Quantum Mechanics (đểu)}
+\begin{axiom}[Measurement]
+    A measurement is a process in which information about the state of a physical system
+    is acquired by an observer. 
+    In QM, the measurement of an observable $A$ prepares an eigenstate of $A$, 
+    and the observer learns the value of the corresponding eigenvalue. 
+
+    As QM is inherently probabilistic, the probabilities for the outcomes are determined by ``Born" rule:
+    \begin{equation*}
+        \mathbb{P}(a_n) = || E_n \ket{\varphi} ||^2 = \bra{\varphi} E_n \ket{\varphi} \,. 
+    \end{equation*}
+
+    The expectation value of the measurement outcome:
+    \pause
+    \begin{equation*}
+        \langle A \rangle = \sum a_n \mathbb{P}(a_n) = \bra{\varphi} A \ket{\varphi} \,.
+    \end{equation*}
+\end{axiom}
+    
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Basics: Quantum Mechanics (đểu)}
+\begin{axiom}[Time evolution]
+    Time evolution is determined by the Schr\"odinger equation:
+    \begin{equation*}
+    \frac{d}{dt} \ket{\Psi(t)} = -i H(t)\ket{\Psi(t)}
+    \end{equation*}
+\end{axiom}
+
+\begin{axiom}[Composite systems]
+    The Hilber space of composite system $AB$ is the tensor product of $A$ and $B$:
+    \begin{equation*}
+        \mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B
+    \end{equation*}
+    of dimension $d_A d_B$ and orthonormal basis $\{ \ket{e_i}_A \otimes \ket{k_j}_B \}$.
 \end{axiom}
 
 \end{frame}
 
 
+\begin{frame}
+\frametitle{Basics: Quantum Mechanics (đểu)}
+Rule: if $\ket{a} = \sum a_i \ket{e_i} \in \mathcal{H}_A$ and 
+$b = \sum b_j \ket{k_j} \in \mathcal{H}_B$, then
+\begin{equation*}
+    \ket{a} \otimes \ket{b} := \sum_{i,j} a_ib_j \ket{e_i}\otimes \ket{k_j} \,.
+\end{equation*}
+\pause
+
+The rest of QM just flows from here, up to our imagination.
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Qubits}
+    The building block of classical information is the bit, which takes values in 
+    $\{0,1\}$.
+    The building block of quantum information is the qubit.
+
+    \pause
+
+    Question: why qubits? other than they live in the simplest non-trivial quantum system?
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Qubits}
+    $\mathcal{H} = \mathrm{span}\{\ket{0}, \ket{1}\}$,
+    $\mathrm{dim}(\mathcal{H}) = 2$.
+
+    Think 
+    \begin{equation*}
+        \ket{0} = \begin{pmatrix}
+            1 \\ 0
+        \end{pmatrix} \,, \quad 
+            \ket{1} =
+        \begin{pmatrix}
+            0 \\1 
+        \end{pmatrix}\,.
+    \end{equation*}
+    All the possible \emph{unitary} transformations are the the Pauli operators:
+    \begin{gather*}
+        I \,, \quad \sigma_1 = \begin{pmatrix}
+            0 & 1 \\ 1 & 0
+        \end{pmatrix} \,,
+        \quad \sigma_2 = \begin{pmatrix}
+            0 & -i \\ i & 0
+        \end{pmatrix} \,,
+        \quad \sigma_3 = \begin{pmatrix}
+            1 & 0 \\ 0 &-1 
+        \end{pmatrix} \,.
+    \end{gather*}
+    Then
+    \begin{equation*}
+        \ket{\Psi} = a \ket{0} + b \ket{1} \,.
+    \end{equation*}
+     
+    Measure $\sigma_3$:
+    \begin{equation*}
+        \mathbb{P}(\ket{0}) = |a|^2 \qquad
+        \mathbb{P}(\ket{1}) = |b|^2 \,.
+    \end{equation*}
+
+\end{frame}
 
 \printbibliography 
 %\bibliography{refs}

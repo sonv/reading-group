@@ -1449,6 +1449,7 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/vntex/vnr/vnssi12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/vntex/vnr/vnr12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/vntex/vnr/vnr8.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/vntex/vnr/vnr6.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/vntex/vnr/vnssbx10.tfm
 OUTPUT latexbuild/1-Intro.nav
 OUTPUT latexbuild/1-Intro.toc
 OUTPUT latexbuild/1-Intro.snm
@@ -1459,6 +1460,7 @@ INPUT latexbuild/1-Intro.run.xml
 OUTPUT latexbuild/1-Intro.run.xml
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
@@ -1469,5 +1471,6 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnss12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnss17.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnssi12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb

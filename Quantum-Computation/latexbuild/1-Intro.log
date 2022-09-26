@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  26 SEP 2022 09:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  26 SEP 2022 11:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -934,30 +934,30 @@ Package: physics
  (latexbuild/1-Intro.aux)
 \openout1 = `1-Intro.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 22.
-LaTeX Font Info:    Trying to load font information for T5+cmr on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 23.
+LaTeX Font Info:    Trying to load font information for T5+cmr on input line 23.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    ... okay on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1012,7 +1012,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 23.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1022,66 +1022,66 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count468
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
  (latexbuild/1-Intro.out) (latexbuild/1-Intro.out)
 \@outlinefile=\write6
 \openout6 = `1-Intro.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 22.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 23.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 22.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 23.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T5/cmr/m/n on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 22.
+(Font)                  OT1/cmss/m/n --> T5/cmr/m/n on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T5/cmss/b/n on input line 22.
+(Font)                  OT1/cmr/bx/n --> T5/cmss/b/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T5/cmss/b/n on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 22.
+(Font)                  OT1/cmr/bx/n --> T5/cmss/b/n on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T5/cmss/m/n on input line 22.
+(Font)                  OT1/cmss/m/n --> T5/cmss/m/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T5/cmss/m/n on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 22.
+(Font)                  OT1/cmss/bx/n --> T5/cmss/m/n on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T5/cmss/m/it on input line 22.
+(Font)                  OT1/cmr/m/it --> T5/cmss/m/it on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T5/cmss/m/it on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 22.
+(Font)                  OT1/cmr/bx/it --> T5/cmss/m/it on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 22.
+(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 22.
+(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 23.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T5/cmss/m/n --> T5/cmss/b/n on input line 22.
+(Font)                  T5/cmss/m/n --> T5/cmss/b/n on input line 23.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T5/cmss/m/it --> T5/cmss/b/it on input line 22.
+(Font)                  T5/cmss/m/it --> T5/cmss/b/it on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T5/cmr/b/n on input line 22.
+(Font)                  OT1/cmss/b/n --> T5/cmr/b/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T5/cmss/b/n --> T5/cmss/b/n on input line 22.
+(Font)                  T5/cmss/b/n --> T5/cmss/b/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T5/cmss/m/n --> T5/cmss/b/n on input line 22.
+(Font)                  T5/cmss/m/n --> T5/cmss/b/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T5/cmss/m/it --> T5/cmss/b/it on input line 22.
+(Font)                  T5/cmss/m/it --> T5/cmss/b/it on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T5/cmtt/m/n --> T5/cmtt/b/n on input line 22.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 22.
+(Font)                  T5/cmtt/m/n --> T5/cmtt/b/n on input line 23.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 23.
 LaTeX Font Info:    Encoding `T5' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 22.
+(Font)              `pureletters' in the math version `normal' on input line 23.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T5/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 22.
+(Font)                  T5/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 23.
 LaTeX Font Info:    Encoding `T5' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 22.
+(Font)              `pureletters' in the math version `bold' on input line 23.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T5/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 22.
+(Font)                  T5/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 23.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 22.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 23.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1108,10 +1108,10 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '1-Intro.bbl' found.
  (latexbuild/1-Intro.bbl)
-Package biblatex Info: Reference section=0 on input line 22.
-Package biblatex Info: Reference segment=0 on input line 22.
+Package biblatex Info: Reference section=0 on input line 23.
+Package biblatex Info: Reference segment=0 on input line 23.
  (latexbuild/1-Intro.nav)
-Overfull \hbox (48.3806pt too wide) in paragraph at lines 22--22
+Overfull \hbox (48.3806pt too wide) in paragraph at lines 23--23
  [][]  \T5/cmss/m/n/6 ([])  
  []
 
@@ -1123,19 +1123,19 @@ Overfull \hbox (48.3806pt too wide) has occurred while \output is active
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 39.
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 40.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 39.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 40.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
@@ -1193,8 +1193,99 @@ Overfull \hbox (48.3806pt too wide) has occurred while \output is active
 [8
 
 ]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
 
-LaTeX Warning: Empty bibliography on input line 136.
+[9
+
+]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
+
+[10
+
+]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
+
+[11
+
+]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
+
+[12
+
+]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
+
+[13
+
+]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
+
+[14
+
+]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
+
+[15
+
+]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
+
+[16
+
+]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
+
+[17
+
+]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
+
+[18
+
+]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
+
+[19
+
+]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
+
+[20
+
+]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
+
+[21
+
+]
+
+LaTeX Warning: Empty bibliography on input line 317.
 
 \tf@nav=\write7
 \openout7 = `1-Intro.nav'.
@@ -1213,18 +1304,18 @@ Package logreq Info: Writing requests to '1-Intro.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30098 strings out of 478268
- 587603 string characters out of 5846348
- 1249306 words of memory out of 5000000
- 47738 multiletter control sequences out of 15000+600000
- 484351 words of font info for 60 fonts, out of 8000000 for 9000
+ 30173 strings out of 478268
+ 589123 string characters out of 5846348
+ 1249350 words of memory out of 5000000
+ 47785 multiletter control sequences out of 15000+600000
+ 485291 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,740b,931s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnss17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnssi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on latexbuild/1-Intro.pdf (8 pages, 160051 bytes).
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnss17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnssi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
+Output written on latexbuild/1-Intro.pdf (21 pages, 221878 bytes).
 PDF statistics:
- 411 PDF objects out of 1000 (max. 8388607)
- 312 compressed objects within 4 object streams
- 17 named destinations out of 1000 (max. 500000)
- 343 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 839 PDF objects out of 1000 (max. 8388607)
+ 686 compressed objects within 7 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 547 words of extra memory for PDF output out of 10000 (max. 10000000)
 
