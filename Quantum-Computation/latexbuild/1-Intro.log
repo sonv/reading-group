@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  26 SEP 2022 11:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.1)  26 SEP 2022 15:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1284,8 +1284,22 @@ Overfull \hbox (48.3806pt too wide) has occurred while \output is active
 [21
 
 ]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
 
-LaTeX Warning: Empty bibliography on input line 317.
+[22
+
+]
+Overfull \hbox (48.3806pt too wide) has occurred while \output is active
+ [][]  \T5/cmss/m/n/6 ([])  
+ []
+
+[23
+
+]
+
+LaTeX Warning: Empty bibliography on input line 352.
 
 \tf@nav=\write7
 \openout7 = `1-Intro.nav'.
@@ -1304,18 +1318,18 @@ Package logreq Info: Writing requests to '1-Intro.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30173 strings out of 478268
- 589123 string characters out of 5846348
+ 30189 strings out of 478268
+ 589488 string characters out of 5846348
  1249350 words of memory out of 5000000
- 47785 multiletter control sequences out of 15000+600000
+ 47797 multiletter control sequences out of 15000+600000
  485291 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,740b,931s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnss17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vnssi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on latexbuild/1-Intro.pdf (21 pages, 221878 bytes).
+Output written on latexbuild/1-Intro.pdf (23 pages, 229686 bytes).
 PDF statistics:
- 839 PDF objects out of 1000 (max. 8388607)
- 686 compressed objects within 7 object streams
- 44 named destinations out of 1000 (max. 500000)
- 547 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 904 PDF objects out of 1000 (max. 8388607)
+ 742 compressed objects within 8 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 583 words of extra memory for PDF output out of 10000 (max. 10000000)
 
