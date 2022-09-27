@@ -6,8 +6,9 @@ We will follow the [outline from Caltech's John Preskill](http://theory.caltech.
 Preskill has links to other notes that might be useful as well.
 
 Other useful resources:
-Preskill's [Video Lectures](https://www.youtube.com/playlist?list=PL0ojjrEqIyPy-1RRD8cTD_lF1hflo89Iu)
-UC Berkeley Vazirani's [class](https://www.youtube.com/playlist?list=PLXEJgM3ycgQW5ysL69uaEdPoof4it6seB)
+- Preskill's [Video Lectures](https://www.youtube.com/playlist?list=PL0ojjrEqIyPy-1RRD8cTD_lF1hflo89Iu)
+- UC Berkeley Vazirani's [class](https://www.youtube.com/playlist?list=PLXEJgM3ycgQW5ysL69uaEdPoof4it6seB)
+- _Quantum Computing for Computer Scientists_ by Yanofsky and Mannucci
 
 ## Schedule
 - Sept 26: Truong-Son Van, Introduction and basics
