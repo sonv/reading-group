@@ -9,6 +9,7 @@ Other useful resources:
 - Preskill's [Video Lectures](https://www.youtube.com/playlist?list=PL0ojjrEqIyPy-1RRD8cTD_lF1hflo89Iu)
 - UC Berkeley Vazirani's [class](https://www.youtube.com/playlist?list=PLXEJgM3ycgQW5ysL69uaEdPoof4it6seB)
 - _Quantum Computing for Computer Scientists_ by Yanofsky and Mannucci
+- [_Quantum Computing Lecture Notes_](https://arxiv.org/abs/1907.09415) by Ronald de Wolf
 
 ## Schedule
 - Sept 26: Truong-Son Van, Introduction and basics
