@@ -1,4 +1,4 @@
-\documentclass[12pt]{beamer}
+\documentclass[12pt, aspectratio=169]{beamer}
 %% Remove draft for real article, put twocolumn for two columns
 \usetheme{CambridgeUS}
 \usecolortheme{wolverine}
@@ -346,6 +346,13 @@ The rest of QM just flows from here, up to our imagination.
         \end{equation*}
     \end{theorem}
 
+    \begin{center}
+    \includegraphics[width=3.5cm, height=3cm]{intro/qubits.png}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
     \begin{theorem}
         The expectation values of the Pauli operators are
         \begin{gather*}
@@ -355,8 +362,79 @@ The rest of QM just flows from here, up to our imagination.
         \end{gather*}
     \end{theorem}
 
+\end{frame}
+
+\begin{frame}
+    \frametitle{Open system: two qubits}
+    Let $A, B$ be two quantum systems. We denote $AB$ to be composite system.
+    The Hilbert space $\mathcal{H}_{AB} = \mathcal{H}_A \otimes \mathcal{H}_B$.
+
+    Consider the following state in this system
+    \begin{equation*}
+        \ket{\Psi}_{AB} = a \ket{0}_A \otimes \ket{0}_B +
+                            b \ket{1}_A \otimes \ket{1}_B
+                            = a \ket{00} + b\ket{11} \,.
+    \end{equation*}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Open system: two qubits}
+    Consider the following observable $A = M_A \otimes I_B$.
+    \begin{align*}
+        _{AB} \bra{\Psi} M_A \otimes I_B \ket{\Psi}_{AB} 
+        &=
+        (a^* \bra{00} + b^*\bra{11}) M_A \otimes I_B (a\ket{00} + b\ket{11})\\
+        &= \abs{a}^2 \bra{0}M_A \ket{1} + \abs{b}^2 \bra{1} M_A \ket{1} \,.
+    \end{align*}
+    Rewrite
+    \begin{equation*}
+        _{AB} \bra{\Psi} M_A \otimes I_B \ket{\Psi}_{AB} 
+        =
+        \tr(M_A \rho_A)
+    \end{equation*}
+    where 
+    \begin{equation*}
+        \rho_A = \abs{a}^2 \ket{0}\bra{0} + \abs{b}^2 \ket{1}\bra{1} \,.
+    \end{equation*}
+    (density operator)
 
 \end{frame}
+
+\begin{frame}
+    \frametitle{Open system: two qubits}
+    Why the fuss?
+
+    For $\ket{\Psi}_{AB} = \frac{1}{\sqrt{2}} (\ket{00} + \ket{11})$, we have
+    \begin{equation*}
+        \rho_A = \frac{1}{2} (\ket{0}\bra{0} + \ket{1}\bra{1}) = \frac{1}{2} I \,.
+    \end{equation*}
+
+    If we are in a closed one qubit system
+    $\ket{0} = \ket{\uparrow_z}$ and $\ket{1} = \ket{\downarrow_z}$.
+    $$\ket{\uparrow_x} = \frac{1}{\sqrt{2}} ( \ket{\uparrow_z} + \ket{\downarrow_z})$$
+    $$\ket{\downarrow_x} = \frac{1}{\sqrt{2}} ( \ket{\uparrow_z} - \ket{\downarrow_z})$$
+\end{frame}
+
+\begin{frame}
+    \frametitle{Open system: two qubits}
+    Therefore, when projecting to $\ket{\uparrow_z}$,
+    \begin{equation*}
+        \frac{1}{\sqrt{2}} (\ket{\uparrow_x} + \ket{\downarrow_x}) 
+    \end{equation*}
+    becomes $\ket{z}$ with probability 1.
+
+    On the other hand, in an open system
+    \begin{equation*}
+        \frac{1}{2} (\ket{\uparrow_z}\bra{\uparrow_z} + \ket{\downarrow_z}\bra{\downarrow_z})
+        = \frac{1}{2}I.
+    \end{equation*}
+    Then the projection onto $\ket{\uparrow_x}$ has the expectation value
+    \begin{equation*}
+        \tr( \ket{\uparrow_x}\bra{\uparrow_x}\rho) = \bra{\uparrow_x }\rho \ket{\uparrow_x} = \frac{1}{2} \,.
+    \end{equation*}
+
+\end{frame}
+
 
 \printbibliography 
 %\bibliography{refs}
