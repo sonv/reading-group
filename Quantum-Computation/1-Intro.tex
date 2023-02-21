@@ -394,10 +394,47 @@ The rest of QM just flows from here, up to our imagination.
     \end{equation*}
     where 
     \begin{equation*}
-        \rho_A = \abs{a}^2 \ket{0}\bra{0} + \abs{b}^2 \ket{1}\bra{1} \,.
+        \rho_A = \abs{a}^2 \ket{0}\bra{0} + \abs{b}^2 \ket{1}\bra{1} 
+        = \tr_B( \ket{\Psi} \bra{\Psi})
+        = \sum_{i,j,\mu} \psi^*_{j,\mu} \psi_{i,\mu} \ket{i}\bra{j} \,.
     \end{equation*}
     (density operator)
+\end{frame}
 
+\begin{frame}
+    \frametitle{General case}
+    \begin{align*}
+        \langle M_A \rangle &= _{AB}\bra{\Psi } M_A \otimes I_B \ket{\Psi}_{AB} \\
+                            & = \sum_{j,\nu} a^*_{j\nu} (_A \ket{j}\otimes _B \bra{\nu}) (M_A \otimes I_B)  \sum_{i,\nu} a_{j\nu} (_A \ket{i}\otimes _B \bra{\nu})\\
+                            &= \sum_{i,j,\mu} a^*_{j\mu} a_{i,\mu} \bra{j} M_A \ket{i} = \tr (M_A \rho_A) \,.
+    \end{align*}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Properties of density operator}
+    \begin{equation*}
+        \rho_A 
+        = \sum_{i,j,\mu} \psi^*_{j,\mu} \psi_{i,\mu} \ket{i}\bra{j} \,.
+    \end{equation*}
+    \begin{enumerate}
+        \item Hermitian
+        \item Non-negative
+        \item unit trace
+    \end{enumerate}
+    Thus, there is an orthonormal basis in which the density operator is diagonal.
+    The eigenvalues are non-negative real numbers that sum to one.
+    \begin{equation*}
+        \rho_A = \sum_i p_i \ket{i}_A \bra{i}_A \,,
+    \end{equation*}
+    \begin{equation*}
+        \sum_i p_i = 1 \,.
+    \end{equation*}
+
+\end{frame}
+
+\begin{frame}
+If there is just one nonzero eigenvalue, we say the state of $A$ is ``pure''. Otherwise it is ``mixed''.
 \end{frame}
 
 \begin{frame}
@@ -428,12 +465,58 @@ The rest of QM just flows from here, up to our imagination.
         \frac{1}{2} (\ket{\uparrow_z}\bra{\uparrow_z} + \ket{\downarrow_z}\bra{\downarrow_z})
         = \frac{1}{2}I.
     \end{equation*}
-    Then the projection onto $\ket{\uparrow_x}$ has the expectation value
+    Then the projection onto $\ket{\uparrow_z}$ has the expectation value
     \begin{equation*}
-        \tr( \ket{\uparrow_x}\bra{\uparrow_x}\rho) = \bra{\uparrow_x }\rho \ket{\uparrow_x} = \frac{1}{2} \,.
+        \tr( \ket{\uparrow_z}\bra{\uparrow_z}\rho) = \bra{\uparrow_z }\rho \ket{\uparrow_z} = \frac{1}{2} \,.
     \end{equation*}
-
 \end{frame}
+
+
+\begin{frame}
+    \frametitle{Schmidt decomposition}
+    Consider a state in $\mathcal{H}_A\otimes \mathcal{H}_B$
+    \begin{equation*}
+        \ket{\Psi}_{AB} 
+        = \sum_{i,\mu} \psi_{i\mu} \ket{i}_A \otimes \ket{\mu}_B
+        \equiv
+        \sum_{i} \ket{i}_A \otimes \ket{\tilde i}_B \,,
+    \end{equation*}
+    where
+    \begin{equation*}
+        \ket{\tilde i}_B = \sum_\mu \psi_{i\mu} \ket{\mu}_B \,.
+    \end{equation*}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Schmidt decomposition}
+    Choose a basis of so that 
+    \begin{equation*}
+        \rho_A = \sum_i p_i \ket{i}\bra{i} \,.
+    \end{equation*}
+    Then,
+    \begin{equation*}
+        \rho_A = \tr_B (\ket{\Psi}\bra{\Psi})
+        = \sum_{i,j} \braket{\tilde j}{\tilde i}(\ket{i}\bra{j})
+    \end{equation*}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Schmidt decomposition}
+Matching coefficients,
+\begin{equation*}
+    \braket{\tilde j}{\tilde i}_B = p_i \delta_{ij} \,.
+\end{equation*}
+Letting
+\begin{equation*}
+    \ket{i'}_B = p_i^{-1/2} \ket{\tilde i}_B \,,
+\end{equation*}
+we get
+\begin{equation*}
+    \ket{\Psi}_{AB} = \sum_i \sqrt{p_i} \ket{i}_A \otimes \ket{i'}_B \,.
+\end{equation*}
+\end{frame}
+
 
 
 \printbibliography 
