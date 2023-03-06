@@ -9,6 +9,9 @@ This is a **very informal** reading group.
 
 We will learn the basics of Blockchain and ChatGPT.
 The main idea is to understand the technologies and implications of them.
+That means we will cover certain technical aspects.
+High-level impacts have been discussed a lot in the news so we want to see what's
+beneath.
 The **most optimistic** hope is to innovate and do something novel with these.
 Perhaps, talented students would want to take advantage and dream big on this.
 
@@ -49,5 +52,5 @@ We skip some weeks due to breaks/important meetings.
 | March 24 | Son    | Intro to technical details |
 | April 7  | Lan    | Smart contracts            |
 | April 14 | Linh   |                            |
-| April 21 | Greame |                            |
+| April 21 | Graeme |                            |
 | April 29 | Hieu   |                            |
