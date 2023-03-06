@@ -1,0 +1,52 @@
+---
+title: "FUV Spring 2023 Reading Group: Blockchain and ChatGPT"
+date: "Last update: 2023-03-06"
+output: html_document
+---
+
+
+This is a **very informal** reading group.
+
+We will learn the basics of Blockchain and ChatGPT.
+The main idea is to understand the technologies and implications of them.
+The **most optimistic** hope is to innovate and do something novel with these.
+Perhaps, talented students would want to take advantage and dream big on this.
+
+Although we hope to learn things, as we are not experts, the meetings could be
+messy. At some point, we may have to sit down and read the texts together on the big screen.
+
+For info about previous reading groups, please go to https://github.com/sonv/reading-group.
+
+## Key information
+
+**Time**: Fridays, 9am-10am
+**Place**: CR 502 (except further notices)
+
+**Core members** (responsible to lead):  Tran Vinh Linh, Hieu Nguyen, Minh Doan, Lan Nguyen, Graeme Walker, Truong-Son Van
+
+Everyone who's not a core member is encouraged to lead if they think they can 
+do it.
+
+
+## Materials
+
+We will follow a course on MIT Open Courseware called Blockchain and Money.
+All the materials (including reading materials and slides) are available here:
+
+https://ocw.mit.edu/courses/15-s12-blockchain-and-money-fall-2018/
+
+The syllabus will be roughly the same but we will go with higher speed (hopefully)
+as this is not supposed to be a class but a reading seminar.
+
+## Tentative Schedule
+
+We skip some weeks due to breaks/important meetings.
+
+| Date     | Leader | Topic                      |
+| -------- | ------ | -------------------------- |
+| March 10 | Son    | Intro to technical details |
+| March 24 | Son    | Intro to technical details |
+| April 7  | Lan    | Smart contracts            |
+| April 14 | Linh   |                            |
+| April 21 | Greame |                            |
+| April 29 | Hieu   |                            |
