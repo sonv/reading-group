@@ -20,6 +20,7 @@ For info about previous reading groups, please go to https://github.com/sonv/rea
 ## Key information
 
 **Time**: Fridays, 9am-10am
+
 **Place**: CR 502 (except further notices)
 
 **Core members** (responsible to lead):  Tran Vinh Linh, Hieu Nguyen, Minh Doan, Lan Nguyen, Graeme Walker, Truong-Son Van
@@ -31,7 +32,7 @@ do it.
 ## Materials
 
 We will follow a course on MIT Open Courseware called Blockchain and Money.
-All the materials (including reading materials and slides) are available here:
+All the materials (including reading materials, videos and slides) are available here:
 
 https://ocw.mit.edu/courses/15-s12-blockchain-and-money-fall-2018/
 
