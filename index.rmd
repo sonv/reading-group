@@ -42,6 +42,10 @@ https://ocw.mit.edu/courses/15-s12-blockchain-and-money-fall-2018/
 The syllabus will be roughly the same but we will go with higher speed (hopefully)
 as this is not supposed to be a class but a reading seminar.
 
+A comprehensive book for a course taught on Coursera and at Princeton.
+
+[Bitcoin and Cryptocurrency Technologies](https://bitcoinbook.cs.princeton.edu/)
+
 ## Tentative Schedule
 
 We skip some weeks due to breaks/important meetings.
