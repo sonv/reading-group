@@ -46,6 +46,8 @@ A comprehensive book for a course taught on Coursera and at Princeton.
 
 [Bitcoin and Cryptocurrency Technologies](https://bitcoinbook.cs.princeton.edu/)
 
+[Original paper by Satoshi Nakamoto](https://bitcoin.org/bitcoin.pdf)
+
 ## Tentative Schedule
 
 We skip some weeks due to breaks/important meetings.
