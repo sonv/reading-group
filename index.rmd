@@ -48,6 +48,17 @@ A comprehensive book for a course taught on Coursera and at Princeton.
 
 [Original paper by Satoshi Nakamoto](https://bitcoin.org/bitcoin.pdf)
 
+### YouTube videos
+
+[Public Key Cryptography](https://youtu.be/GSIDS_lvRv4)
+
+[SHA: Secure Hashing Algorithm](https://youtu.be/DMtFhACPnTY)
+
+[Digital Signature](https://youtu.be/s22eJ1eVLTU)
+
+[How does Bitcoin work](https://youtu.be/bBC-nXj3Ng4)
+
+
 ## Tentative Schedule
 
 We skip some weeks due to breaks/important meetings.
