@@ -46,6 +46,25 @@ A comprehensive book for a course taught on Coursera and at Princeton.
 
 [Bitcoin and Cryptocurrency Technologies](https://bitcoinbook.cs.princeton.edu/)
 
+## How to encrypt/decrypt file using openssl
+
+To generate a private key using RSA
+
+    openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
+
+To generate public key
+
+    openssl rsa -pubout -in private_key.pem -out public_key.pem
+
+To encode a file
+
+    openssl rsautl -encrypt -pubin -inkey public_key.pem -in test -out test.enc
+
+To decode a file
+    
+    openssl rsautl -decrypt -ssl -inkey private_key.pem -in test.enc -out test.dec
+
+
 ## Tentative Schedule
 
 We skip some weeks due to breaks/important meetings.
