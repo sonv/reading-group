@@ -46,6 +46,20 @@ A comprehensive book for a course taught on Coursera and at Princeton.
 
 [Bitcoin and Cryptocurrency Technologies](https://bitcoinbook.cs.princeton.edu/)
 
+
+[Original paper by Satoshi Nakamoto](https://bitcoin.org/bitcoin.pdf)
+
+### YouTube videos
+
+[Public Key Cryptography](https://youtu.be/GSIDS_lvRv4)
+
+[SHA: Secure Hashing Algorithm](https://youtu.be/DMtFhACPnTY)
+
+[Digital Signature](https://youtu.be/s22eJ1eVLTU)
+
+[How does Bitcoin work](https://youtu.be/bBC-nXj3Ng4)
+
+
 ## How to encrypt/decrypt file using openssl
 
 To generate a private key using RSA
@@ -63,7 +77,6 @@ To encode a file
 To decode a file
     
     openssl rsautl -decrypt -ssl -inkey private_key.pem -in test.enc -out test.dec
-
 
 ## Tentative Schedule
 
