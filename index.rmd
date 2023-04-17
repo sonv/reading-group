@@ -78,6 +78,23 @@ To decode a file
     
     openssl rsautl -decrypt -ssl -inkey private_key.pem -in test.enc -out test.dec
 
+
+## Smart contracts
+
+[What is Ethereum? A Beginner's Explanation in Plain English (Skipped the short recap on BitCoin)](https://www.youtube.com/watch?t=85&v=jxLkbJozKbY)
+
+[Ethereum Wallets Explained Simply (Smart Contracts, Gas, Transactions)](https://www.youtube.com/watch?v=qLZ1IoezucE)
+
+[MIT Course - Lecture 6 - Last point from Law Professor Larry Lessig](https://www.youtube.com/watch?v=JPkgJwJHYSc)
+
+MIT Course - Lecture 6 - BitCoin vs. Ethereum (Technical features & overall comparison)
+
+[Proof of Stake](https://www.youtube.com/watch?v=M3EFi_POhps)
+
+State of the DApps does not exist anymore, but there are others that serve similar functions of DApps directory/store/review such as 
+DappRadar - The World’s Dapp Store | Blockchain Dapps Ranked or DappReview - Discover your next favourite fecentralized App.
+
+
 ## Tentative Schedule
 
 We skip some weeks due to breaks/important meetings.
