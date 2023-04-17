@@ -103,7 +103,7 @@ We skip some weeks due to breaks/important meetings.
 | -------- | ------ | -------------------------- |
 | March 10 | Son    | Intro to technical details |
 | March 24 | Son    | Intro to technical details |
-| April 7  | Lan    | Smart contracts            |
-| April 14 | Linh   |                            |
-| April 21 | Graeme |                            |
-| April 29 | Hieu   |                            |
+| April 14  | Lan    | Smart contracts            |
+| April 21 | Hieu |   Hash functions                          |
+| April 29 | Linh |                            |
+| May 05| Graeme|                            |
