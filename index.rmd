@@ -94,6 +94,8 @@ MIT Course - Lecture 6 - BitCoin vs. Ethereum (Technical features & overall comp
 State of the DApps does not exist anymore, but there are others that serve similar functions of DApps directory/store/review such as 
 DappRadar - The World’s Dapp Store | Blockchain Dapps Ranked or DappReview - Discover your next favourite fecentralized App.
 
+## Hash functions
+[Slides](Block-Chain/Hash_functions.pdf)
 
 ## Tentative Schedule
 
@@ -104,6 +106,5 @@ We skip some weeks due to breaks/important meetings.
 | March 10 | Son    | Intro to technical details |
 | March 24 | Son    | Intro to technical details |
 | April 14  | Lan    | Smart contracts            |
-| April 21 | Hieu |   Hash functions                          |
-| April 29 | Linh |                            |
-| May 05| Graeme|                            |
+| April 29 | Linh | Scalabilitf                           |
+| May 05| Hieu |   Hash functions                          |
